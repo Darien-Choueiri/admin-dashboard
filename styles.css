@@ -37,6 +37,9 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: #fae8ff;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 ul {
@@ -184,3 +187,84 @@ ul {
     border-radius: 50%;
     height: 50px;
 }
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2rem repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projects > div {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 10px 1fr;
+}
+
+.projects > h2 {
+    margin: 0px;
+    grid-column: 1 / 3;
+    justify-self: start;
+    align-self: end;
+}
+
+.accent {
+    background-color: lightskyblue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.projects > div > div,  .projects > div > h3{
+   padding-left: 10px;
+}
+.projects > div > p {
+    align-self: start;
+}
+
+.announcments > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+ }
+.trending > div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 20px;
+}
+
+.trend-link {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}
+.trend-link > img{
+    border-radius: 50%;
+    height: 50px;
+}
+
+.trend-link > p > a {
+    font-weight: bold;
+}
+
