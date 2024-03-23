@@ -1,3 +1,7 @@
+p, h3 {
+    margin: 0px;
+}
+
 .container {
     display: grid;
     grid-template-columns: minmax(270px, 1fr) 5fr;
@@ -208,6 +212,8 @@ ul {
     border-radius: 15px;
     display: grid;
     grid-template-columns: 10px 1fr;
+    grid-template-rows: 40px 1fr 1fr;
+    align-items: center;
 }
 
 .projects > h2 {
@@ -220,12 +226,13 @@ ul {
 .accent {
     background-color: lightskyblue;
     grid-column: 1 / 2;
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
+    height: 100%;
     border-radius: 15px 0px 0px 15px;
 }
 
-.projects > div > div,  .projects > div > h3{
-   padding-left: 10px;
+.projects > div > p,  .projects > div > h3{
+   margin-left: 20px;
 }
 .projects > div > p {
     align-self: start;
@@ -239,6 +246,18 @@ ul {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.announcments > div > div > h4, 
+.announcments > div > div > p {
+    margin: 0px; 
+}
+
+.announcments > div > div > p {
+    height: 50px;
+}
+.announcments > div > div {
+    display: grid;
+}
+
 .trending {
     display: grid;
     grid-template-rows: 60px 1fr;
@@ -250,6 +269,7 @@ ul {
     margin-right: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin-bottom: 20px;
+    display: grid;
 }
 
 .trend-link {
@@ -258,13 +278,25 @@ ul {
     justify-content: start;
     gap: 20px;
     align-items: center;
+
 }
 .trend-link > img{
     border-radius: 50%;
     height: 50px;
+    background-color: lightgrey;
 }
 
 .trend-link > p > a {
     font-weight: bold;
 }
 
+.icons {
+    justify-self: end;
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: column;
+    margin-right: 20px;
+}
+.icons > img {
+    height: 30px;
+}
